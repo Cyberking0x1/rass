@@ -2,7 +2,6 @@
 
 import React from "react";
 
-
 const FAQS = [
   {
     title: "How do I get started?",
@@ -35,15 +34,21 @@ export function Faqs() {
     <section className="px-8 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Frequently asked questions</h1>
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
+            Frequently asked questions
+          </h1>
           <p className="mx-auto mb-24 text-gray-500 text-lg lg:w-3/5">
-            A lot of people don&apos;t appreciate the moment until it&apos;s passed. I&apos;m not trying my hardest, and I&apos;m not trying to do
+            A lot of people don&apos;t appreciate the moment until it&apos;s
+            passed. I&apos;m not trying my hardest, and I&apos;m not trying to do
           </p>
         </div>
 
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
-            <div key={title} className="bg-white rounded-xl shadow p-8 border border-gray-100">
+            <div
+              key={title}
+              className="bg-white rounded-xl shadow p-8 border border-gray-100"
+            >
               <h4 className="text-2xl font-bold text-gray-900 pb-6">{title}</h4>
               <div className="pt-2">
                 <p className="font-normal text-gray-500">{desc}</p>
